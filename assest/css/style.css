@@ -64,19 +64,19 @@ body {
 	transform: translate(120px, 100px);
 }
 
-.header-text h1{
+.main-text .header-text h1{
 	font-size: 60px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
-.section p {
+.main-text .section p {
 	font-family: 'monserrat';
 	font-weight: -100;
 	font-size:22px;
 	padding: 35px 0;
 }
 
-.button button {
+.main-text .button button {
 	width: 250px;
 	height: 42px;
 	text-transform: uppercase;
@@ -88,13 +88,16 @@ body {
 	font-size: 15px;
 }
 
-.button button:hover {
+.main-text .button button:hover {
 	filter: brightness(.9);
 	transition: all .2s;
 	cursor: pointer;
 }
 
-
+/* best seller */
+.best-seller {
+	height: 74vh;
+}
 
 
 
