@@ -6,8 +6,12 @@
 	font-family: 'monserrat';
 	src:url('../font/Montserrat-Medium.ttf') format('truetype');
 }
+@font-face{
+	font-family: 'monserrat-reg';
+	src:url('../font/Montserrat-Regular.ttf') format('truetype');
+}
 body {
-	font-family: 'monserrat',sans-serif;
+	font-family:sans-serif;
 	background-color: rgba(228,125,126,100);
 	overflow-x: hidden;
 }
@@ -87,9 +91,10 @@ body {
 	font-size: 60px;
 	font-weight: bold;
 	text-transform: uppercase;
+	font-family: 'monserrat';
 }
 .main-text .section p {
-	font-family: 'monserrat';
+	font-family: 'monserrat-reg';
 	font-weight: -100;
 	font-size:22px;
 	padding: 35px 0;
@@ -115,15 +120,55 @@ body {
 
 /* best seller */
 .best-seller {
-	height: 74vh;
+	height: 65vh;
+	text-align: center;
+	width: 90%
+	margin:auto;
+	/*border: 1px solid #333;*/
+	transform: translateY(-140px);
+	color: white;
+}
+
+.header-best-seller h1 {
+	text-transform:uppercase;
+	font-size:43px;
+	margin-bottom: 43px;
+	font-family: monserrat;
+}
+.header-best-seller p {
+	font-family: monserrat-reg;
 }
 
 
+/*cards */
 
+.best-seller .cards {
+	padding-top: 43px;
+	display: flex;
+	width: 80%;
+	margin: auto;
+	justify-content: space-between;
+}
 
+.cards .card {
+	width: 30%;
+	border: 1px solid #333;
+}
+.cards .card .img img {
+	width: 270px;
+}
+.cards .card .sections h1{
+	font-size:20px;
+	margin-bottom: 30px;
+	font-family: 'monserrat'
+}
+.cards .card .sections p{
+	font-size:14px;
+	box-sizing: border-box;
+	padding-right: 15px;
+	padding-left: 15px;
 
-
-
+}
 
 
 
