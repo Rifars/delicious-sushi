@@ -219,11 +219,16 @@ body {
 /* best tasty background */
 .best-tasty .bg-tasty{
 	position: absolute;
-	bottom: 0;
 	width: 100%;
-	height: 250px;
+	bottom: 0;
+	height: 260px;
 	background-image: url(../img/bg2.png);
 	background-size: cover;
+
 }
 
 
+/* statistic */
+.statistic {
+	height: 100vh;
+}
