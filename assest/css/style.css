@@ -147,15 +147,15 @@ body {
 	display: flex;
 	width: 80%;
 	margin: auto;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 .cards .card {
 	width: 30%;
-	border: 1px solid #333;
+	/*border: 1px solid #333;*/
 }
 .cards .card .img img {
-	width: 270px;
+	width: 250px;
 }
 .cards .card .sections h1{
 	font-size:20px;
@@ -163,7 +163,7 @@ body {
 	font-family: 'monserrat'
 }
 .cards .card .sections p{
-	font-size:14px;
+	font-size:15px;
 	box-sizing: border-box;
 	padding-right: 15px;
 	padding-left: 15px;
