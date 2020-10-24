@@ -291,13 +291,8 @@ body {
 	transform: translate(950px, -45px);
 }
 
-.delicious {
-	position: relative;
-	
-}
-.delicious .section-best-tasty {
-	height: 100%;
-}
+.delicious {position: relative;}
+.delicious .section-best-tasty {height: 100%;}
 .delicious .sushis {
 	position: absolute;
 	bottom: 100px;
@@ -306,6 +301,25 @@ body {
 /* profile */
 
 .profile {
-	height: 100vh;
-	background-image: url(../img/profiel.png);
+	height: 120vh;
+	width: 100%;
+	background-image: url(../img/bg3.png);
+	/* background-position: center; */
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-profile {text-align: center;	color: white;}
+
+.main-profile .img-profile img{
+	width: 210px;
+	height: 210px;
+	border-radius: 50%;
+}
+
+.main-profile .quote p {
+	font-family: 'monserrat-reg';
+	margin: 40px 0;
 }
