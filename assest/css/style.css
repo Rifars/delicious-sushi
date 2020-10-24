@@ -452,3 +452,48 @@ body {
 	text-transform: capitalize;
 	font-size: 14px;
 }
+
+.section-about .sushis {
+	position: absolute;
+	top: 0;
+	right: 200px;
+}
+
+/* created */
+.created {
+	height: 30vh;
+	background-color: #111;
+	color: #777;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
+.created .main-created {
+	display:flex;
+	margin: auto;
+	width: 50%;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+
+.tree {
+	font-family: 'monserrat-reg';
+	font-weight: normal;
+	font-size: 17px;
+}
+
+.a {
+	display: inline-block;
+	color: #777;
+	text-decoration: none;
+	font-family: 'monserrat-reg';
+	font-size: 15px;
+	padding-top: 20px;
+}
+.rifars a {text-decoration: none;}
+.rifars img {
+	width: 30px;
+	height: 30px;
+	border-radius:50%;
+	margin-bottom: -10px;
+}
