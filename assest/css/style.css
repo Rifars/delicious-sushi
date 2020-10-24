@@ -114,7 +114,7 @@ body {
 }
 
 .but:hover {
-	filter: brightness(.9);
+	filter: brightness(.8);
 	transition: all .3s;
 	cursor: pointer;
 	
@@ -200,20 +200,38 @@ body {
 /* section-best-tasty */
 .section-best-tasty{
 	display: flex;
-	width: 80%;
+	width: 75%;
 	margin: auto;
-	transform: translateY(100px);
+	/* transform: translateY(100px); */
+	align-items: center;
+	height: 75%;
+	justify-content: space-between;
 }
-.section-tasty {width: 50%;color: #ff7f7f;}
+.section-best-tasty .img-radius img {
+	width: 350px;
+	border-radius: 50%;
+	transition: .3s;
+	/* border:1px solid rgba(228,125,126,0) */
+}
+
+.img-radius img:hover {
+	filter: brightness(.8);
+	transition: .3s;
+	cursor: pointer;
+	/* border: 3px solid rgba(228,125,126,.8); */
+}
+
+.section-tasty {width: 50%;color: #ff7f7f;text-align: left;}
 .header-tasty h1 {
 	font-family: monserrat;
 	font-size: 43px;
 	text-transform: uppercase;
 }
-.main-tasty p{text-align: left; margin:50px 0; font-family:'monserrat-reg';}
+.main-tasty p{ margin:50px 0; font-family:'monserrat-reg';}
 .main-tasty button {
 	background-color:#ff7f7f;
 	color: rgb(255, 255, 255);
+	transition: .3s;
 }
 
 /* best tasty background */
