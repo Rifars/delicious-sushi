@@ -184,7 +184,7 @@ body {
 }
 
 .best-seller .sushis {position: absolute;top: 0;}
-.best-seller .sushis .sushi {width: 110px;}
+.sushi {width: 110px;}
 .sushis .sushi1 {transform: translate(-10px , 35vh);}
 .sushis .sushi2 {transform: translate(1050px , 25vh);}
 
@@ -248,5 +248,64 @@ body {
 
 /* statistic */
 .statistic {
+	height: 80vh;
+	width: 100%;
+	text-align: center;
+	color: white;
+	margin-top: 110px;
+	position: relative;
+}
+.statistic .static-header h1 {
+	font-size: 43px;
+	text-transform: uppercase;
+	font-family: 'monserrat';
+}
+
+.statistic .static-header p {
+	font-family: 'monserrat-reg';
+	margin: 35px 0;
+}
+
+.statistic .static-main {
+	display: flex;
+	width: 80%;
+	justify-content: space-around;
+	margin: auto;
+	padding-top: 30px;
+} 
+
+.static-main .numb {
+	width: 210px;
+	height: 210px;
+	border: 3px solid white;
+	border-radius: 50%;
+	line-height: 210px;
+	font-size: 43px;
+	font-family: 'monserrat';
+}
+.statistic .sushis {position: absolute;}
+.statistic .sushis .sushi3 {
+	transform: translate(70px, 30px);
+}
+.statistic .sushis .sushi4 {
+	transform: translate(950px, -45px);
+}
+
+.delicious {
+	position: relative;
+	
+}
+.delicious .section-best-tasty {
+	height: 100%;
+}
+.delicious .sushis {
+	position: absolute;
+	bottom: 100px;
+	right: 580px;
+}
+/* profile */
+
+.profile {
 	height: 100vh;
+	background-image: url(../img/profiel.png);
 }
