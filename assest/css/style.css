@@ -323,3 +323,79 @@ body {
 	font-family: 'monserrat-reg';
 	margin: 40px 0;
 }
+/* fisha */
+.fisha {
+	height: 130px;
+	background-color: white;
+}
+/* subscribe */
+.subscribe {
+	height: 80vh;
+	width: 100%;
+	background-color: white;
+	color: #ff7f7f;
+	position: relative;
+}
+.subscribe .sub {
+	text-align: center;
+}
+
+.subscribe .sub h1 {
+	font-size: 40px;
+	font-family: 'monserrat';
+	text-transform: uppercase;
+}
+
+.subscribe .sub p{
+	font-family: 'monserrat-reg';
+	margin: 50px 0 ;
+}
+
+.buttons {
+	text-align: center;
+}
+
+.buttons .subs {
+	width: 340px;
+	height: 40px;
+	padding-left: 20px;
+	padding-right: 45px;
+	outline: none;
+	border: none;
+	border-radius: 25px;
+	background-color: #eee;
+	box-sizing: border-box;
+	/* color: #ff7f7f; */
+}
+.buttons .input {
+	color: #f06567;
+	font-weight: 540;
+}
+.buttons .button{
+	width: 140px;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: 'monserrat';
+	font-weight: bold;
+	background-color: #ff7f7f;
+	color: white;
+	margin-left: -40px;
+	cursor: pointer;
+}
+
+.subscribe .bg4 {
+	background-image: url(../img/bg4.png);
+	height: 280px;
+	width: 100%;
+	background-size: cover;
+	position: absolute;
+	bottom: 0;
+}
+
+
+/* section about */
+/* .section-about{
+	height: 100vh;
+	color: white;
+	background-color: black;
+} */
