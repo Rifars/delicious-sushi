@@ -351,6 +351,23 @@ body {
 	font-family: 'monserrat-reg';
 	margin: 50px 0 ;
 }
+.subscribe .sushis {
+	position: absolute;
+}
+
+.subscribe .sushis .sushi11 {
+	transform: translate(30px,-295px);
+}
+.subscribe .sushis .sushi13 {
+	transform: translate(850px,-335px);
+}
+
+.subscribe .sushis .sushi12 {
+	transform: translate(330px,145px);
+}
+
+
+
 
 .buttons {
 	text-align: center;
