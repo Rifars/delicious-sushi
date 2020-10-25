@@ -19,7 +19,7 @@ body {
 
 /*header from home*/
 .header {
-	max-width: 100%;
+	width: 100%;
 	height: 950px;
 	background-image: url(../img/header.png);
 	background-repeat: no-repeat;
@@ -96,7 +96,7 @@ body {
 
 .main-text .section p {
 	font-family: 'monserrat-reg';
-	font-weight: -100;
+	/* font-weight: -100; */
 	font-size:22px;
 	padding: 35px 0;
 }
@@ -186,7 +186,7 @@ body {
 .best-seller .sushis {position: absolute;top: 0;}
 .sushi {width: 110px;}
 .sushis .sushi1 {transform: translate(-10px , 35vh);}
-.sushis .sushi2 {transform: translate(1050px , 25vh);}
+.sushis .sushi2 {transform: translate(950px , 25vh);}
 
 /* Best tasty */
 .best-tasty {
@@ -254,6 +254,7 @@ body {
 	color: white;
 	margin-top: 110px;
 	position: relative;
+	
 }
 .statistic .static-header h1 {
 	font-size: 43px;
@@ -275,6 +276,7 @@ body {
 } 
 
 .static-main .numb {
+	cursor: pointer;
 	width: 210px;
 	height: 210px;
 	border: 3px solid white;
@@ -284,10 +286,10 @@ body {
 	font-family: 'monserrat';
 }
 .statistic .sushis {position: absolute;}
-.statistic .sushis .sushi3 {
+.sushis .sushi3 {
 	transform: translate(70px, 30px);
 }
-.statistic .sushis .sushi4 {
+.sushis .sushi4 {
 	transform: translate(950px, -45px);
 }
 
@@ -355,14 +357,14 @@ body {
 	position: absolute;
 }
 
-.subscribe .sushis .sushi11 {
+.sushis .sushi11 {
 	transform: translate(30px,-295px);
 }
-.subscribe .sushis .sushi13 {
+.sushis .sushi13 {
 	transform: translate(850px,-335px);
 }
 
-.subscribe .sushis .sushi12 {
+.sushis .sushi12 {
 	transform: translate(330px,145px);
 }
 
@@ -507,10 +509,13 @@ body {
 	font-size: 15px;
 	padding-top: 20px;
 }
-.rifars a, .freepik {text-decoration: none;}
+.rifars a, .freepik a {text-decoration: none;}
 .image {
 	width: 30px;
 	height: 30px;
 	border-radius:50%;
 	margin-bottom: -10px;
 }
+
+
+

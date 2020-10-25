@@ -1,0 +1,100 @@
+/* * {box-sizing: border-box;} */
+
+/* for tab  */
+@media only screen and (max-width:1200px){
+    /* card sushi  */
+    .best-seller .sushis .sushi2 {transform: translate(770px , 25vh);}
+    /* static sushi */
+    .statistic .sushis .sushi4 {transform: translate(750px, -45px); }
+    /* delecious sushi */
+    .best-tasty.delicious .sushis {
+        right: 480px;
+    }
+    /* subscribe sushi */
+    .subscribe .sushis .sushi12 {transform: translate(330px,100px);}
+    .subscribe .sushis .sushi13 {transform: translate(610px,-335px);}
+    /* items about */
+    .items-about.respon .sushis{right: 150px;}
+}
+
+/* tab 2 */
+@media only screen and (max-width:870px){
+    /* nav */
+    .tab .nav .search {display: none;}
+    /* card */
+    .best-seller.tab .cards {width: 100%;}
+    .best-seller .cards .card .img img {width: 200px;}
+    /* card sushi  */
+    .best-seller .sushis {display:none;}
+    /* best testy */
+    .tab .section-best-tasty .img-radius img {width: 250px;}
+    .tab .sushis{display: none;}
+    /* statistic */
+    .tab .static-main .numb{width: 160px; height: 160px; line-height: 160px; font-size: 35px;}
+    /* profil */
+    .profile .main-profile .img-profile img{width: 190px; height: 190px;}
+    /* subscriber */
+    .subscribe.tab .sushis {display: none;}
+    /* created */
+    .created.tab .main-created{width: 70%;}
+}
+
+/* hp */
+@media only screen and (max-width:570px){
+    /* nav */
+    .hp .nav .item{display: none;}
+    .hp .nav {justify-content: center; padding: 0;}
+    /* header */
+    .hp .main-text .header-text h1{font-size: 45px;}
+    .hp .main-text .section p {font-size:17px;}
+    /* best seller */
+    .hp .header-best-seller h1 {font-size: 35px;}
+    .hp .header-best-seller p {font-size: 16px;}
+    /* cards */
+    .best-seller.hp {height: auto;}
+    .hp .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hp .cards .card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    /* best testy */
+    /* .best-tasty.hp{
+        height: auto;
+    } */
+    .hp .but {width: 200px;}
+    .hp .section-best-tasty{width: 90%;}
+    .hp .section-best-tasty .img-radius img {width: 190px;}
+    .hp .header-tasty h1{font-size: 35px;}
+    .hp .main-tasty p {margin-top:10px}
+    /* statistic */
+    .statistic.hp .static-header h1{
+        font-size: 35px;
+    }
+    .statistic.hp .static-header p {font-size: 15px;}
+    .statistic.hp .static-main{width: 95%; justify-content: space-around;}
+    .hp .static-main .numb {
+        width: 130px;
+        height: 130px;
+        line-height: 130px;
+        font-size: 30px;
+    }
+    /* subscribe */
+    .subscribe.hp .sub h1 {font-size: 33px;}
+    .subscribe.hp .sub p {font-size: 15px;}
+    .hp .up .sisi{width: 250px;}
+    /* section about  */
+    .section-about.hp{
+        align-items: center;
+        flex-direction: column;
+    }
+    .section-about.hp .sosial {width: 90%;}
+    .section-about.hp .sosial p {font-size: 14px;}
+    .section-about.hp .items-about {width: 90%;}
+    .hp .items ul li a {font-size: 13px;}
+    /* created */
+    .created.hp .main-created{width: 85%;}
+    .hp .tree {font-size: 15px;}
+}
