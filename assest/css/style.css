@@ -2,10 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
-@font-face{
-	font-family: 'monserrat';
-	src:url('../font/Montserrat-Medium.ttf') format('truetype');
-}
+
 @font-face{
 	font-family: 'monserrat-reg';
 	src:url('../font/Montserrat-Regular.ttf') format('truetype');
@@ -87,7 +84,9 @@ body {
 /*main text from header*/
 .main-text {color: white;transform: translate(120px, 100px);}
 
-.main-text .header-text h1{opacity:0; font-size: 60px;font-weight: bold;text-transform: uppercase;font-family: 'monserrat';}
+.main-text .header-text h1{
+	opacity:0; font-size: 60px;font-weight: bold;text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;}
 
 .main-text .section p {opacity:0; font-family: 'monserrat-reg';font-size:22px;padding: 35px 0;}
 
@@ -122,7 +121,8 @@ body {
 }
 .header-best-seller{opacity: 0;}
 
-.header-best-seller h1 { text-transform:uppercase;font-size:43px;margin-bottom: 43px;font-family: monserrat;}
+.header-best-seller h1 { text-transform:uppercase;font-size:43px;margin-bottom: 43px;
+	font-family: 'Montserrat', sans-serif;}
 .header-best-seller p {font-family: monserrat-reg;}
 
 
@@ -140,7 +140,7 @@ body {
 .one,.two,.three{opacity: 0;}
 .cards .card {width: 30%;transition: .3s; }
 .cards .card .img img {width: 250px;}
-.cards .card .sections h1{font-size:20px;margin-bottom: 30px;font-family: 'monserrat'}
+.cards .card .sections h1{font-size:20px;margin-bottom: 30px;font-family: 'Montserrat', sans-serif;}
 
 .cards .card .sections p{
 	font-size:15px;
@@ -188,7 +188,7 @@ body {
 .img-radius img:hover {filter: brightness(.8);transition: .3s;cursor: pointer;}
 
 .section-tasty {width: 50%;color: #ff7f7f;text-align: left;}
-.header-tasty h1 {font-family: monserrat;font-size: 43px;text-transform: uppercase;}
+.header-tasty h1 {font-family: 'Montserrat', sans-serif;font-size: 43px;text-transform: uppercase;}
 .main-tasty p{ margin:50px 0; font-family:'monserrat-reg';}
 .main-tasty button {background-color:#ff7f7f;color: rgb(255, 255, 255);transition: .3s;}
 
@@ -213,7 +213,7 @@ body {
 	
 }
 .static-header{opacity: 0;}
-.statistic .static-header h1 {font-size: 43px;text-transform: uppercase;font-family: 'monserrat';}
+.statistic .static-header h1 {font-size: 43px;text-transform: uppercase;font-family: 'Montserrat', sans-serif;}
 
 .statistic .static-header p {font-family: 'monserrat-reg';margin: 35px 0;}
 
@@ -269,7 +269,7 @@ body {
 	position: relative;
 }
 .subscribe .sub {text-align: center; }
-.subscribe .sub h1 {font-size: 40px;font-family: 'monserrat';text-transform: uppercase;}
+.subscribe .sub h1 {font-size: 40px;font-family: 'Montserrat', sans-serif;text-transform: uppercase;}
 .subscribe .sub p{font-family: 'monserrat-reg';margin: 50px 0 ;}
 
 .subscribe .sushis {position: absolute;}
