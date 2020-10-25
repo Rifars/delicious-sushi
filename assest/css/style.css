@@ -10,10 +10,33 @@
 	font-family: 'monserrat-reg';
 	src:url('../font/Montserrat-Regular.ttf') format('truetype');
 }
+
+@keyframes animate{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes animateUp {
+	0%{opacity: 0; transform: translateY(80px);}
+	100%{opacity: 1; transform: translateY(0);}
+}
+@keyframes animateLeft {
+	0%{opacity: 0; transform: translateX(80px);}
+	100%{opacity: 1; transform: translateX(0);}
+}
+@keyframes animateRight {
+	0%{opacity: 0; transform: translateX(-80px);}
+	100%{opacity: 1; transform: translateX(0);}
+}
+
+
+.animate {animation: animate 2s forwards;}
+.animateUp {animation: animateUp 2s forwards;}
+.animateLeft {animation: animateLeft 2s forwards;}
+.animateRight {animation: animateRight 2s forwards;}
+
 body {
 	font-family:sans-serif;
 	background-color: #ff7f7f;
-	
 	overflow-x: hidden;
 }
 
@@ -25,6 +48,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	/* z-index: -999; */
 }
 
 /*nav from header home*/
@@ -40,20 +64,10 @@ body {
 	padding: 0 75px;
 	font-family: sans-serif;
 }
-.nav .logo img {
-	width: 80px;
-	cursor: pointer;
-}
-.nav .logo img:hover {
-	filter: brightness(.9);
-	transition: .2s;
-}
+.nav .logo img {width: 80px;cursor: pointer;}
+.nav .logo img:hover {filter: brightness(.9);transition: .2s;}
 .nav .item {width: 50%;}
-.nav .item ul {
-	display: flex;
-	justify-content: space-around;
-	list-style: none;
-}
+.nav .item ul {display: flex;justify-content: space-around;list-style: none;}
 
 .nav .item ul li a {
 	font-family: sans-serif;
@@ -66,41 +80,19 @@ body {
 	padding: 24px 38px ;
 	transition: all .3s;
 }
-.nav .item ul li a:hover {
-	background-color: #ff7f7f;
-	color: #ddd;
-	transition: all .3s;
-}
-
-.nav .search i {
-	font-size:25px;
-	cursor: pointer;
-}
-
-.nav .search i:hover {
-	filter: brightness(.9);
-}
+.nav .item ul li a:hover {background-color: #ff7f7f;color: #ddd;transition: all .3s;}
+.nav .search i {font-size:25px;cursor: pointer;}
+.nav .search i:hover {filter: brightness(.9);}
 
 /*main text from header*/
-.main-text {
-	color: white;
-	transform: translate(120px, 100px);
-}
+.main-text {color: white;transform: translate(120px, 100px);}
 
-.main-text .header-text h1{
-	font-size: 60px;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-family: 'monserrat';
-}
+.main-text .header-text h1{opacity:0; font-size: 60px;font-weight: bold;text-transform: uppercase;font-family: 'monserrat';}
 
-.main-text .section p {
-	font-family: 'monserrat-reg';
-	/* font-weight: -100; */
-	font-size:22px;
-	padding: 35px 0;
-}
+.main-text .section p {opacity:0; font-family: 'monserrat-reg';font-size:22px;padding: 35px 0;}
+
 /* button  */
+.button button{opacity: 0;}
 .but {
 	width: 250px;
 	height: 42px;
@@ -113,34 +105,25 @@ body {
 	font-size: 15px;
 }
 
-.but:hover {
-	filter: brightness(.8);
-	transition: all .3s;
-	cursor: pointer;
-	
-}
+.but:hover {filter: brightness(.8);transition: all .3s;cursor: pointer;}
 
 /* best seller */
 .best-seller {
-	height: 70vh;
+	
+	height: auto;
 	text-align: center;
-	width: 90%;
+	width: 100%;
 	margin:auto;
 	/*border: 1px solid #333;*/
 	transform: translateY(-140px);
 	color: white;
 	position: relative;
+	/* background-color: #ff7f7f; */
 }
+.header-best-seller{opacity: 0;}
 
-.header-best-seller h1 {
-	text-transform:uppercase;
-	font-size:43px;
-	margin-bottom: 43px;
-	font-family: monserrat;
-}
-.header-best-seller p {
-	font-family: monserrat-reg;
-}
+.header-best-seller h1 { text-transform:uppercase;font-size:43px;margin-bottom: 43px;font-family: monserrat;}
+.header-best-seller p {font-family: monserrat-reg;}
 
 
 /*cards from best seller*/
@@ -149,21 +132,15 @@ body {
 	display: flex;
 	width: 80%;
 	margin: auto;
+	background-color: #ff7f7f;
 	justify-content: space-evenly;
 }
 
 /* card from cards */
-.cards .card {
-	width: 30%;
-	transition: .3s;
-	/*border: 1px solid #333;*/
-}
+.one,.two,.three{opacity: 0;}
+.cards .card {width: 30%;transition: .3s; }
 .cards .card .img img {width: 250px;}
-.cards .card .sections h1{
-	font-size:20px;
-	margin-bottom: 30px;
-	font-family: 'monserrat'
-}
+.cards .card .sections h1{font-size:20px;margin-bottom: 30px;font-family: 'monserrat'}
 
 .cards .card .sections p{
 	font-size:15px;
@@ -176,7 +153,6 @@ body {
 
 .cards .card:hover {
 	filter: brightness(.9);
-	/* box-shadow: 0 0 3px #aaa; */
 	background-color: rgba(228,125,126,.5);
 	transition: .3s;
 	cursor: pointer;
@@ -186,7 +162,7 @@ body {
 .best-seller .sushis {position: absolute;top: 0;}
 .sushi {width: 110px;}
 .sushis .sushi1 {transform: translate(-10px , 35vh);}
-.sushis .sushi2 {transform: translate(950px , 25vh);}
+.sushis .sushi2 {transform: translate(1050px , 25vh);}
 
 /* Best tasty */
 .best-tasty {
@@ -195,6 +171,7 @@ body {
 	background-color: white;
 	text-align: center;
 	position: relative;
+	opacity: 0;
 }
 
 /* section-best-tasty */
@@ -202,37 +179,18 @@ body {
 	display: flex;
 	width: 75%;
 	margin: auto;
-	/* transform: translateY(100px); */
 	align-items: center;
 	height: 75%;
 	justify-content: space-between;
 }
-.section-best-tasty .img-radius img {
-	width: 350px;
-	border-radius: 50%;
-	transition: .3s;
-	/* border:1px solid rgba(228,125,126,0) */
-}
+.section-best-tasty .img-radius img {width: 350px;border-radius: 50%;transition: .3s;}
 
-.img-radius img:hover {
-	filter: brightness(.8);
-	transition: .3s;
-	cursor: pointer;
-	/* border: 3px solid rgba(228,125,126,.8); */
-}
+.img-radius img:hover {filter: brightness(.8);transition: .3s;cursor: pointer;}
 
 .section-tasty {width: 50%;color: #ff7f7f;text-align: left;}
-.header-tasty h1 {
-	font-family: monserrat;
-	font-size: 43px;
-	text-transform: uppercase;
-}
+.header-tasty h1 {font-family: monserrat;font-size: 43px;text-transform: uppercase;}
 .main-tasty p{ margin:50px 0; font-family:'monserrat-reg';}
-.main-tasty button {
-	background-color:#ff7f7f;
-	color: rgb(255, 255, 255);
-	transition: .3s;
-}
+.main-tasty button {background-color:#ff7f7f;color: rgb(255, 255, 255);transition: .3s;}
 
 /* best tasty background */
 .best-tasty .bg-tasty{
@@ -242,9 +200,7 @@ body {
 	height: 260px;
 	background-image: url(../img/bg2.png);
 	background-size: cover;
-
 }
-
 
 /* statistic */
 .statistic {
@@ -256,16 +212,10 @@ body {
 	position: relative;
 	
 }
-.statistic .static-header h1 {
-	font-size: 43px;
-	text-transform: uppercase;
-	font-family: 'monserrat';
-}
+.static-header{opacity: 0;}
+.statistic .static-header h1 {font-size: 43px;text-transform: uppercase;font-family: 'monserrat';}
 
-.statistic .static-header p {
-	font-family: 'monserrat-reg';
-	margin: 35px 0;
-}
+.statistic .static-header p {font-family: 'monserrat-reg';margin: 35px 0;}
 
 .statistic .static-main {
 	display: flex;
@@ -286,27 +236,18 @@ body {
 	font-family: 'monserrat';
 }
 .statistic .sushis {position: absolute;}
-.sushis .sushi3 {
-	transform: translate(70px, 30px);
-}
-.sushis .sushi4 {
-	transform: translate(950px, -45px);
-}
+.sushis .sushi3 {transform: translate(70px, 30px);}
+.sushis .sushi4 {transform: translate(950px, -45px);}
 
-.delicious {position: relative;}
+.delicious {position: relative;opacity: 0;}
 .delicious .section-best-tasty {height: 100%;}
-.delicious .sushis {
-	position: absolute;
-	bottom: 100px;
-	right: 580px;
-}
+.delicious .sushis {position: absolute;bottom: 100px;right: 580px;}
 /* profile */
 
 .profile {
 	height: 120vh;
 	width: 100%;
 	background-image: url(../img/bg3.png);
-	/* background-position: center; */
 	background-size: cover;
 	display: flex;
 	justify-content: center;
@@ -314,22 +255,10 @@ body {
 }
 
 .main-profile {text-align: center;	color: white;}
-
-.main-profile .img-profile img{
-	width: 210px;
-	height: 210px;
-	border-radius: 50%;
-}
-
-.main-profile .quote p {
-	font-family: 'monserrat-reg';
-	margin: 40px 0;
-}
+.main-profile .img-profile img{ opacity :0; width: 210px;height: 210px;border-radius: 50%;}
+.main-profile .quote p {font-family: 'monserrat-reg';margin: 40px 0;}
 /* margin */
-.margin {
-	height: 130px;
-	background-color: white;
-}
+.margin {height: 130px;background-color: white;}
 
 /* subscribe */
 .subscribe {
@@ -339,43 +268,19 @@ body {
 	color: #ff7f7f;
 	position: relative;
 }
-.subscribe .sub {
-	text-align: center;
-}
+.subscribe .sub {text-align: center; }
+.subscribe .sub h1 {font-size: 40px;font-family: 'monserrat';text-transform: uppercase;}
+.subscribe .sub p{font-family: 'monserrat-reg';margin: 50px 0 ;}
 
-.subscribe .sub h1 {
-	font-size: 40px;
-	font-family: 'monserrat';
-	text-transform: uppercase;
-}
+.subscribe .sushis {position: absolute;}
+.sushis .sushi11 {transform: translate(30px,-295px);}
+.sushis .sushi13 {transform: translate(850px,-335px);}
+.sushis .sushi12 {transform: translate(330px,145px);}
 
-.subscribe .sub p{
-	font-family: 'monserrat-reg';
-	margin: 50px 0 ;
-}
-.subscribe .sushis {
-	position: absolute;
-}
-
-.sushis .sushi11 {
-	transform: translate(30px,-295px);
-}
-.sushis .sushi13 {
-	transform: translate(850px,-335px);
-}
-
-.sushis .sushi12 {
-	transform: translate(330px,145px);
-}
-
-
-
-
-.buttons {
-	text-align: center;
-}
-
+.buttons {text-align: center;}
+.buttons  {opacity: 0;}
 .buttons .subs {
+	/* opacity: 0; */
 	width: 340px;
 	height: 40px;
 	padding-left: 20px;
@@ -387,10 +292,7 @@ body {
 	box-sizing: border-box;
 	/* color: #ff7f7f; */
 }
-.buttons .input {
-	color: #f06567;
-	font-weight: 540;
-}
+.buttons .input {color: #f06567;font-weight: 540;}
 .buttons .button{
 	width: 140px;
 	padding: 0;
@@ -412,15 +314,10 @@ body {
 	bottom: 0;
 }
 
-.up {
-	width: 100%;
-	position: absolute;
-	top: 0;
-	transform: translateY(-130px);
-	/* left: 0; */
-}
-.up .sisi{width: 500px;}
-.up .right {position: absolute;right: 0;}
+.up {width: 100%;position: absolute;top: 0;transform: translateY(-130px);}
+.up .sisi{width: 500px; }
+.up .right {position: absolute;right: 0; opacity: 0;}
+.up .left{opacity: 0;}
 
 /* section about */
 .section-about{
@@ -434,35 +331,12 @@ body {
 	width: 100%;
 	margin: auto;
 }
-.section-about .sosial {
-	width: 35%;
-}
-.section-about .sosial p {
-	font-family: 'monserrat-reg';
-	color: #ddd;
-	margin: 15px 0;
-	font-size: 16px;
-}
-.section-about .items-about {
-	display: flex;
-	width: 50%;
-	justify-content: space-around;
-	text-transform: capitalize;
-}
+.section-about .sosial {width: 35%;}
 
-.h3{
-	font-weight: normal;
-	font-family: 'monserrat-reg';
-	color: #ddd;
-	font-size: 23px;
-
-}
-
-.items ul li {
-	list-style: none;
-	margin: 15px 0;
-}
-
+.section-about .sosial p {font-family: 'monserrat-reg';color: #ddd;margin: 15px 0;font-size: 16px;}
+.section-about .items-about {display: flex;width: 50%;justify-content: space-around;text-transform: capitalize;}
+.h3{font-weight: normal;font-family: 'monserrat-reg';color: #ddd;font-size: 23px;}
+.items ul li {list-style: none;margin: 15px 0;}
 .items ul li a {
 	text-decoration: none;
 	font-family: 'monserrat-reg';
@@ -472,11 +346,7 @@ body {
 	font-size: 14px;
 }
 
-.section-about .sushis {
-	position: absolute;
-	top: 0;
-	right: 200px;
-}
+.section-about .sushis {position: absolute;top: 0;right: 200px;}
 
 /* created */
 .created {
@@ -495,11 +365,7 @@ body {
 	margin-top: 70px;
 }
 
-.tree {
-	font-family: 'monserrat-reg';
-	font-weight: normal;
-	font-size: 17px;
-}
+.tree {font-family: 'monserrat-reg';font-weight: normal;font-size: 17px;}
 
 .a {
 	display: inline-block;
@@ -508,14 +374,11 @@ body {
 	font-family: 'monserrat-reg';
 	font-size: 15px;
 	padding-top: 20px;
+	/* transform: translateY(); */
 }
 .rifars a, .freepik a {text-decoration: none;}
-.image {
-	width: 30px;
-	height: 30px;
-	border-radius:50%;
-	margin-bottom: -10px;
-}
+.image {width: 30px;height: 30px;border-radius:50%;margin-bottom: -10px;}
 
 
 
+.sushis .sushi11,.sushis .sushi12,.sushis .sushi13,.sushis .sushi3, .sushis .sushi4{opacity: 0;}
